@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.5.0",
+    "@heroicons/react": "^1.0.5",
+    "@pdftron/pdfjs-express-viewer": "^8.2.1",
+    "@pdftron/webviewer": "^8.3.0",
+    "@react-pdf-viewer/core": "^3.1.1",
+    "@react-pdf-viewer/default-layout": "^3.1.1",
+    "@react-pdf/renderer": "^2.1.1",
+    "next": "latest",
+    "pdfjs-dist": "^2.13.216",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-pdf": "^5.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.4",
+    "@types/react": "17.0.38",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.7",
+    "prettier": "^2.5.1",
+    "prettier-plugin-tailwindcss": "^0.1.1",
+    "tailwindcss": "^3.0.23",
+    "typescript": "4.5.4"
+  }
+}
