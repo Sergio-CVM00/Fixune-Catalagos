@@ -4,7 +4,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "npm run download-webviewer",
     "download-webviewer": "npx @pdftron/webviewer-downloader --webviewerLocation ./public/webviewer/lib"
   },
   "dependencies": {
