@@ -9,7 +9,7 @@ export default function HomePage() {
         WebViewer(
           {
             path: '/webviewer/lib',
-            initialDoc: '/pdfs/cat_epi_CompressPdf.pdf',
+            initialDoc: '/pdfs/cat_epi_compressed.pdf',
           },
           viewer.current,
         ).then((instance) => {
