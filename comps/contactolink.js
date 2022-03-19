@@ -3,10 +3,10 @@ export default function Content () {
     return (
         <div class="bg-orange-500 h-128 flex items-center justify-center px-16">
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div className="grid gap-10 lg:grid-cols-2">
+                <div className="grid gap-10 lg:grid-cols-1">
                 <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
                     <div className="max-w-xl mb-6">
-                        <h2 className="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-gray-900 sm:text-5xl">
+                        <h2 className="max-w-lg mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-gray-50 sm:text-5xl">
                             Dejalo en nuestras manos
                         </h2>
                         <p className="text-base font-semibold tracking-tight text-gray-900 md:text-lg" >
@@ -32,6 +32,15 @@ export default function Content () {
                     </Link>
                     </div>
                 </div>
+                </div>
+            </div>
+      </div>
+    );
+  };
+
+
+  /*
+
                 <div className="flex items-center justify-center -mx-4 lg:pl-8">
                     <div className="flex flex-col items-end px-3">
                     <img
@@ -53,8 +62,4 @@ export default function Content () {
                     />
                     </div>
                 </div>
-                </div>
-            </div>
-      </div>
-    );
-  };
+  */

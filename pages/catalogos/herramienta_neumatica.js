@@ -1,21 +1,33 @@
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-import { Viewer, Worker } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+import {useEffect, useRef} from 'react';
+
+export default function HomePage() {
+
+    const viewer = useRef(null);
+
+    useEffect(() => {
+      import('@pdftron/webviewer').then(() => {
+        WebViewer(
+          {
+            path: '/webviewer/lib',
+            initialDoc: '/pdfs/cat_herramientaneumatica_CompressPdf.pdf',
+          },
+          viewer.current,
+        ).then((instance) => {
+            const { docViewer } = instance;
+            instance.UI.disableElements(['toolbarGroup-Shapes']);
+            instance.UI.disableElements(['toolbarGroup-Edit'])
+            instance.UI.disableElements(['toolbarGroup-Forms'])
+            instance.UI.disableElements(['toolbarGroup-Insert'])
+            instance.UI.disableElements(['toolbarGroup-Annotate'])
+          });
+      })
+    }, []);
 
 
-export default function herramienta_neumatica() {
-    const defaultLayoutPluginInstance = defaultLayoutPlugin();
     return (
-        <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.13.216/build/pdf.worker.js">
-            <div style={{ height: '750px' }}>
-                <Viewer
-                    fileUrl="/pdfs/cat_herramientaneumatica_CompressPdf.pdf"
-                    plugins={[
-                        defaultLayoutPluginInstance,
-                    ]}
-                />
-            </div>
-        </Worker>
+      <div className="MyComponent">
+        <div className="webviewer" ref={viewer} style={{height: "100vh"}}></div>
+      </div>
     );
+  
 }
