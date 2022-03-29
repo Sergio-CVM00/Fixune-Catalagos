@@ -5,7 +5,7 @@ export default function Mapita (){
                   <div className="flex flex-col justify-between ">
                     
                     <div className="max-w-xl mb-6">
-                      <h2 className="max-w-lg mb-6 font-sans antialiased font-bold tracking-tight text-gray-900 lg:text-8xl sm:text-7xl sm:leading-none">
+                      <h2 className="max-w-lg mb-6 font-sans text-6xl antialiased font-bold tracking-tight text-gray-900 sm:text-7xl sm:leading-none">
                         Estamos a tu alcance
                       </h2>
                     </div>
