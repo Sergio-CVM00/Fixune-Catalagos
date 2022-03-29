@@ -144,10 +144,10 @@ export default function Cats() {
                 </div>
                 <div className="flex justify-between mt-4">
                   <div>
-                    <h3 className="text-sm text-gray-700">
+                    <h3 className="text-sm font-bold text-gray-700">
                       <Link href={product.href}>
                         <a>
-                          <span aria-hidden="true" className="absolute inset-0" />
+                          <span aria-hidden="true" className="absolute inset-0 " />
                           {product.name}
                         </a>
                       </Link>

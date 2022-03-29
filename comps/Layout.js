@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
     return (
         <div className="flex flex-col justify-between h-screen bg-gray-50">
             <head>
-                <title>Fixune-Catálogo</title>
+                <title>Fixune</title>
             </head>
             <NavbarFinal></NavbarFinal>
             { children }

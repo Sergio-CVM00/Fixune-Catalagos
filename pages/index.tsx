@@ -13,7 +13,7 @@ import FAQS from '../comps/FAQS'
 export default function Home() {
   return (
     <div>
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 " >
         <Barrita></Barrita>
         <Cta3></Cta3>
         <Promociones></Promociones>
